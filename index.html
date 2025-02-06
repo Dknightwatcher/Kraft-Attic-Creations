@@ -1,66 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kraft Attic Creations</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Kraft Attic Creations</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-  <header>
-    <h1>Kraft Attic Creations</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#" id="cart-btn">Cart (<span id="cart-count">0</span>)</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <h1>Shop Our Creations</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- About Me Section -->
-  <section id="about">
-    <h2>About Kraft Attic Creations</h2>
-    <p>Welcome to Kraft Attic Creations! 🎨✨ We specialize in custom apparel, stickers, and tumblers, made with love using **DTF printing** and **sublimation techniques**.</p>
-    <p>Every design is crafted with passion, ensuring unique and high-quality prints. Whether you're looking for personalized gifts, trendy sweaters, or stylish stickers, we’ve got you covered!</p>
-    <p>Thank you for supporting a small business! 💖</p>
-  </section>
+    <section class="products">
+        <div class="product">
+            <img src="images/shirt1.jpg" alt="Custom Shirt">
+            <h2>Custom Shirt</h2>
+            <p>$20.00</p>
+            <button onclick="addToCart('Custom Shirt', 20)">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="images/sweater1.jpg" alt="Custom Sweater">
+            <h2>Custom Sweater</h2>
+            <p>$35.00</p>
+            <button onclick="addToCart('Custom Sweater', 35)">Add to Cart</button>
+        </div>
 
-  <section class="products">
-    <div class="product">
-      <img src="images/shirt1.jpg" alt="Custom Shirt">
-      <h2>Custom Shirt</h2>
-      <p>$20.00</p>
-      <button onclick="addToCart('Custom Shirt', 20)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <img src="images/sticker1.jpg" alt="Custom Sticker">
+            <h2>Custom Sticker</h2>
+            <p>$5.00</p>
+            <button onclick="addToCart('Custom Sticker', 5)">Add to Cart</button>
+        </div>
+    </section>
 
-    <div class="product">
-      <img src="images/sweater1.jpg" alt="Custom Sweater">
-      <h2>Custom Sweater</h2>
-      <p>$35.00</p>
-      <button onclick="addToCart('Custom Sweater', 35)">Add to Cart</button>
-    </div>
-
-    <div class="product">
-      <img src="images/sticker1.jpg" alt="Custom Sticker">
-      <h2>Custom Sticker</h2>
-      <p>$5.00</p>
-      <button onclick="addToCart('Custom Sticker', 5)">Add to Cart</button>
-    </div>
-  </section>
-
-  <section id="cart">
-    <h2>Shopping Cart</h2>
-    <ul id="cart-items"></ul>
-    <p><strong>Total: $<span id="cart-total">0.00</span></strong></p>
-    <button onclick="checkout()">Checkout</button>
-  </section>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
