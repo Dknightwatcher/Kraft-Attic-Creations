@@ -51,5 +51,4 @@ function checkout() {
         return;
     }
 
-    alert("Thank you for shopping with Kraft Attic Creations! To complete your order, please contact us via email or social media.");
-}
+    alert("Thank you
